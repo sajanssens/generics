@@ -24,13 +24,13 @@ public class App {
         // Generic types ------------
         // Invariant
         // nps.pay(people); // not allowed
-        nps.payDay(emps);
+        nps.payAll(emps);
         // nps.pay(devs); // not allowed
 
         // Covariant
         // nps.payDayCo(people); // not allowed
-        nps.payDayCo(emps);
-        nps.payDayCo(devs);
+        nps.payAllCo(emps);
+        nps.payAllCo(devs);
 
         // Contravariant
         nps.scaleUp(people);

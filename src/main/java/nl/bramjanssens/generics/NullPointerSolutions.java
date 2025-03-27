@@ -7,12 +7,12 @@ public class NullPointerSolutions {
         e.pay();
     }
 
-    public void payDay(List<Employee> es) {
+    public void payAll(List<Employee> es) {
         es.forEach(Employee::pay);  // read
         es.add(new ProductOwner()); // write
     }
 
-    public void payDayCo(List<? extends Employee> es) {
+    public void payAllCo(List<? extends Employee> es) {
         es.forEach(Employee::pay);     // read
         // es.add(new Employee()); // write
         // es.add(new ProductOwner()); // write
